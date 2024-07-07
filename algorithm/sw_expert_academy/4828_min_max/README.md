@@ -1,8 +1,10 @@
 ---
 category: Algorithm
-title:
+title: min max
 site: SWEA
-number:
+number: 4828
 date_started: 2024.
 tags: Python
 ---
+
+## min(), max()
