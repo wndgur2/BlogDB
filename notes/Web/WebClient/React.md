@@ -2,7 +2,7 @@
 category: Study
 title: ReactJs
 date_started: 2024.06.14
-tags: ReactJs
+tags: ReactJs, Web, Browser
 ---
 
 > 출처: [React.dev](https://react.dev/)
@@ -32,11 +32,12 @@ State를 변경하는 방식을 지정한다. Class에서 set property를 지정
 기존에는 이를 아래와 같은 코드로 구현했다.
 
 ```jsx
-setPosts((prevPosts:_Post[]):_Post[] => {
-    if(prevPosts.find((prevPost:_Post) => prevPost.id === post.id)) return prevPosts;
-    return [...prevPosts, post].sort((a:_Post, b:_Post) => {
-        if(a.date_started > b.date_started) return -1;
-        if(a.date_started < b.date_started) return 1;
+setPosts((prevPosts: _Post[]): _Post[] => {
+    if (prevPosts.find((prevPost: _Post) => prevPost.id === post.id))
+        return prevPosts;
+    return [...prevPosts, post].sort((a: _Post, b: _Post) => {
+        if (a.date_started > b.date_started) return -1;
+        if (a.date_started < b.date_started) return 1;
         return 0;
     });
 });
@@ -47,7 +48,7 @@ setPosts((prevPosts:_Post[]):_Post[] => {
 위 코드는 아래처럼 단순해졌다.
 
 ```jsx
-dispatch({type: "INSERT_POST", payload: post});
+dispatch({ type: "INSERT_POST", payload: post });
 ```
 
 `INSERT_POST`라는 action을 `postsReducer.ts`의 `reducer`에 정의했다.
@@ -55,23 +56,34 @@ dispatch({type: "INSERT_POST", payload: post});
 ```typescript
 const reducer = (state: _Post[], action: PostAction): _Post[] => {
     switch (action.type) {
-        case 'INSERT_POST':
+        case "INSERT_POST":
             // if post already exists, return state
-            if(state.find((prevPost:_Post) => prevPost.id === action.payload.id)) return state;
+            if (
+                state.find(
+                    (prevPost: _Post) => prevPost.id === action.payload.id
+                )
+            )
+                return state;
 
             let index;
             while (left <= right) {
                 index = Math.floor((left + right) / 2);
-                if (state[index].date_started === action.payload.date_started) break;
-                if (state[index].date_started < action.payload.date_started) right = index - 1;
+                if (state[index].date_started === action.payload.date_started)
+                    break;
+                if (state[index].date_started < action.payload.date_started)
+                    right = index - 1;
                 else left = index + 1;
             }
-            return [...state.slice(0, index), action.payload, ...state.slice(index)];
+            return [
+                ...state.slice(0, index),
+                action.payload,
+                ...state.slice(index),
+            ];
 
         default:
             return state;
     }
-}
+};
 ```
 
 `ACTION`을 정의해 중복 코드를 방지하고 한김에 정렬 로직도 이진 탐색을 이용했다.<br>
@@ -98,13 +110,13 @@ declares a ref. You can hold any value in it, but most often it's used to hold a
 `useMemo` vs `useEffect`&&`useState`
 
 1. Purpose<br>
-  `useEffect`: Manages side effects such as data fetching, subscriptions, or manual DOM manipulations.<br>
-  `useMemo`: Memoizes a value so that it is recalculated only when its dependencies change. Used to optimize performance by avoiding expensive calculations on every render.
+   `useEffect`: Manages side effects such as data fetching, subscriptions, or manual DOM manipulations.<br>
+   `useMemo`: Memoizes a value so that it is recalculated only when its dependencies change. Used to optimize performance by avoiding expensive calculations on every render.
 2. Usage<br>
-  `useEffect`: Runs a function after the component renders. Can run on every render or conditionally based on dependencies.<br>
-  `useMemo`: is purely for performance optimization. It doesn't manage state or side effects but caches a computed value.
+   `useEffect`: Runs a function after the component renders. Can run on every render or conditionally based on dependencies.<br>
+   `useMemo`: is purely for performance optimization. It doesn't manage state or side effects but caches a computed value.
 3. Performance<br>
-  흉내낼 순 있지만, 목적이 다르기 때문에, 값이 바뀌는 타이밍과 개선되는 성능이 다르다. 또 코드의 명확성을 따지면 useMemo만 쓰는 것이 당연히 좋다.
+   흉내낼 순 있지만, 목적이 다르기 때문에, 값이 바뀌는 타이밍과 개선되는 성능이 다르다. 또 코드의 명확성을 따지면 useMemo만 쓰는 것이 당연히 좋다.
 
 ### [`useCallback`](https://react.dev/reference/react/useCallback)
 

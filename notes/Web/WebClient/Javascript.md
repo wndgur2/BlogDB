@@ -2,20 +2,18 @@
 category: Study
 title: Javascript
 date_started: 2024.06.14
-tags: Javascript
+tags: Javascript, Web, Browser
 ---
-
-# Javascript
 
 ## Object
 
-- `keys()`
-- `values()`
+-   `keys()`
+-   `values()`
 
 ## Array
 
-- `concat()`
-- `reduce()`
+-   `concat()`
+-   `reduce()`
 
 ## Promise & async
 
@@ -23,18 +21,19 @@ async function은 말 그대로 비동기로 수행하는 함수를 의미한다
 시간이 많이 걸리는 작업(ex: data fetching)은 비동기로 처리하여 페이지 로딩 시간을 단축시킨다. 아마 이런 코드일 것이다.
 
 ```javascript
-async function fetchData(){
-    try{
-        const res = await fetch("https://raw.githubusercontent.com/wndgur2/CatChess/main/server/modules/constants/cats.json");
+async function fetchData() {
+    try {
+        const res = await fetch(
+            "https://raw.githubusercontent.com/wndgur2/CatChess/main/server/modules/constants/cats.json"
+        );
         return await res.json();
-    } catch(err){
+    } catch (err) {
         console.error(err);
     }
 }
 
-fetchData()
-.then(data=>{
-        console.log(data.royalBellyRubber);
+fetchData().then((data) => {
+    console.log(data.royalBellyRubber);
 });
 
 console.log("Do something without data.");
@@ -49,11 +48,13 @@ console.log("Do something without data.");
 우리가 알던 일반적인 함수는, `return` 다음의 값을 `return`한다. 그런데 `async function`은 그렇지 않다.
 
 ```javascript
-async function fetchData(){
-    try{
-        const res = await fetch("https://raw.githubusercontent.com/wndgur2/CatChess/main/server/modules/constants/cats.json");
+async function fetchData() {
+    try {
+        const res = await fetch(
+            "https://raw.githubusercontent.com/wndgur2/CatChess/main/server/modules/constants/cats.json"
+        );
         return await res.json();
-    } catch(err){
+    } catch (err) {
         console.error(err);
     }
 }
@@ -101,15 +102,13 @@ function App() {
 
 ```html
 <a id="parent" href="https://naver.com">
-    <button id="child">
-        Click Me!
-    </button>
+    <button id="child">Click Me!</button>
 </a>
 <script>
     const handleClick = (e) => {
         e.preventDefault();
-        console.log('Button Clicked');
-    }
-    document.getElementById('child').addEventListener('click', handleClick);
+        console.log("Button Clicked");
+    };
+    document.getElementById("child").addEventListener("click", handleClick);
 </script>
 ```

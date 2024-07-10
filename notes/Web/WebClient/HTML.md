@@ -2,7 +2,7 @@
 category: Study
 title: HTML
 date_started: 2024.06.14
-tags: HTML
+tags: HTML, Web, Browser
 ---
 
 # HTML: HyperText Markup Language
@@ -15,11 +15,11 @@ HTML에는 별도의 기능이 없는 엘리먼트가 꽤 있다. (article, sect
 Semantic 프로그래밍은, 코드를 보고 그 의미를 이해하기 쉽도록 만든다. 특히나 Html 코드는, 사람 뿐만 아니라 검색 엔진이 레이팅할 때에도 사용되기 때문에 의미가 명확해질 수록 좋다.<br>
 Semantics is about whether or not the sentence has a valid meaning -Sazonov Nikita
 
-- `<header>`
-- `<body>`
-- `<footer>`
-- `<article>`
-- `<section>`
-- `<search>`
-- `<detail> <summary>` name prop
-- `<input> <datalist>`
+-   `<header>`
+-   `<body>`
+-   `<footer>`
+-   `<article>`
+-   `<section>`
+-   `<search>`
+-   `<detail> <summary>` name prop
+-   `<input> <datalist>`
