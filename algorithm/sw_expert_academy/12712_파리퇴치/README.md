@@ -5,6 +5,7 @@ site: SWEA
 number: 12712
 date_started: 2024.07.04
 tags: 구현, Python
+level: D2
 ---
 
 ## 12712\_파리퇴치 2024-07-04-18:31:07

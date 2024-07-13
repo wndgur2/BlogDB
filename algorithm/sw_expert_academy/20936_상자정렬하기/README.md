@@ -5,6 +5,7 @@ site: SWEA
 number: 20936
 date_started: 2024.05.10
 tags: 정렬, Python
+level: D4
 ---
 
 ## 20936\_상자정렬하기 2024-05-10-13:43:06

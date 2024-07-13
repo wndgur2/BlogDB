@@ -5,6 +5,7 @@ site: SWEA
 number: 6485
 date_started: 2024.05.19
 tags: 스택, Python
+level: D3
 ---
 
 ## 6485\_삼성시의버스노선 2024-05-19-03:42:50

@@ -5,6 +5,7 @@ site: SWEA
 number: 20934
 date_started: 2024.05.09
 tags: 구현, Python
+level: D3
 ---
 
 ## 20934\_방울마술 2024-05-09-15:23:41

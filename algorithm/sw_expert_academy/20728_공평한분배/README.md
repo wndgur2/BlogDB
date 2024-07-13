@@ -5,6 +5,7 @@ site: SWEA
 number: 20728
 date_started: 2024.05.19
 tags: 정렬, Python
+level: D3
 ---
 
 ## 20728\_공평한분배2 2024-05-19-00:46:40
