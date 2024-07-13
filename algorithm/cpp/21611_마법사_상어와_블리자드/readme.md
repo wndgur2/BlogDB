@@ -5,6 +5,7 @@ site: BOJ
 number: 21611
 date_started: 2023.07.07
 tags: 구현, Cpp
+level: G1
 ---
 
 ## 백준*21611*마법사*상어와*블리자드 2024-07-07
