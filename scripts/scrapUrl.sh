@@ -3,6 +3,9 @@
 # This script creates a list of URLs of md files.
 # The list is saved in a file named ./urls.json
 
+# Go to the directory of the script
+cd "$(dirname "$0")"
+
 # Create the urls.json file
 echo "[" > ./urls.json
 
