@@ -5,6 +5,7 @@ site: SWEA
 number: 1244
 date_started: 2024.06.16
 tags: DFS, Python
+level: D3
 ---
 
 ## 1244\_최대상금 2024-05-09-20:22:56

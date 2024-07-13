@@ -5,6 +5,7 @@ site: SWEA
 number: 1247
 date_started: 2024.05.16
 tags: DFS, 순열, Python
+level: D5
 ---
 
 ## 1247\_최적경로 2024-05-16-13:50:09

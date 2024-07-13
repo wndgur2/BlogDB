@@ -5,6 +5,7 @@ site: SWEA
 number: 1248
 date_started: 2024.05.16
 tags: 트리, Python
+level: D5
 ---
 
 ## 1248\_공통조상 2024-05-16-13:06:38

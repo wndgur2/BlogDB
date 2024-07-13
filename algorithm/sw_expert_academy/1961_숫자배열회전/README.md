@@ -5,6 +5,7 @@ site: SWEA
 number: 1961
 date_started: 2024.07.04
 tags: 구현, Python
+level: D2
 ---
 
 ## 1961\_숫자배열회전 2024-07-04-19:12:21

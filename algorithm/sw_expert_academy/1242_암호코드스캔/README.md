@@ -5,6 +5,7 @@ site: SWEA
 number: 1242
 date_started: 2024.05.17
 tags: 구현, 해시, Python
+level: D5
 ---
 
 ## 1242\_암호코드스캔 2024-05-17-15:00:07

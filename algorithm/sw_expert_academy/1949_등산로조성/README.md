@@ -5,6 +5,7 @@ site: SWEA
 number: 1949
 date_started: 2024.06.16
 tags: "DFS, Python"
+level: 모의 역량
 ---
 
 ## 1949\_등산로조성 2024-05-18-16:37:31
