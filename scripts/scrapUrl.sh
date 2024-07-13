@@ -11,11 +11,15 @@ echo "[" > ./urls.json
 
 # Find all md files in the posts directory
 find .. -name "*.md" | while read file; do
+
   # Get the URL of the file
   url=$(echo $file)
 
   # ignore node_modules
   if [[ $url == *"node_modules"* ]]; then
+    continue
+  fi
+  if [[ $url == *"private"* ]]; then
     continue
   fi
 
