@@ -5,6 +5,8 @@ date_started: 2024.06.14
 tags: Web
 ---
 
+> 참고 자료: How the web works - MDN(https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+
 # WEB Client 기본 동작
 
 네이버에 접속하려 한다. 그래서 주소창에 _www.naver.com_을 입력하고 엔터를 친다. 여느 때와 다름 없이 네이버 페이지가 로딩된다. 이미지가 보여지고, HTML에 CSS가 입혀진 모습이다. 버튼들이 각자의 역할을 수행하고 있다. 무슨 일이 일어난 것일까?
@@ -32,10 +34,10 @@ tags: Web
 
 ## Browser 페이지 파싱 순서
 
-- 브라우저는 먼저 HTML을 읽어들인다. 그러면서 CSS stylesheets를 참조하는 `<link>` 엘리먼트와 스크립트들을 참조하는 `<script>`-엘리먼트를 발견하게 된다.
-- 브라우저는 HTML을 읽어들이면서, 찾은 `<link>`나 `<script>` 태그에 대하여 서버에 다시 reqeust를 보낸다. 그리고 그 응답으로부터 CSS와 JavaScript를 읽어들인다.
-- 브라우저는 읽어들인 HTML으로 in-memory [DOM(Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) tree를, CSS로부터 in-memory CSSOM을 생성한다. 그리고 JavaScript를 컴파일하고 실행한다.
+-   브라우저는 먼저 HTML을 읽어들인다. 그러면서 CSS stylesheets를 참조하는 `<link>` 엘리먼트와 스크립트들을 참조하는 `<script>`-엘리먼트를 발견하게 된다.
+-   브라우저는 HTML을 읽어들이면서, 찾은 `<link>`나 `<script>` 태그에 대하여 서버에 다시 reqeust를 보낸다. 그리고 그 응답으로부터 CSS와 JavaScript를 읽어들인다.
+-   브라우저는 읽어들인 HTML으로 in-memory [DOM(Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) tree를, CSS로부터 in-memory CSSOM을 생성한다. 그리고 JavaScript를 컴파일하고 실행한다.
 
 이렇게 브라우저가 DOM tree와 CSSOM tree를 생성하고 JavaScript를 실행하면서, 페이지 정보가 창에 띄워지고, 사용자가 상호작용할 수 있게 된다.
 
-> 출처: [How the web works - MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+> 참고 자료: [How the web works - MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
