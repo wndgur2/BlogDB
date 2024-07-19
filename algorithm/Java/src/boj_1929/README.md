@@ -4,7 +4,7 @@ title: 소수 구하기
 site: BOJ
 number: 1929
 date_started: 2024.07.18
-tags: Java, 수학
+tags: Java, 수학, 에라토스테네스의 체
 level: S3
 ---
 
