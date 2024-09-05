@@ -1,7 +1,7 @@
 ---
 category: Algorithm
 title: 수 나누기 게임
-site: SWEA
+site: BOJ
 number: 27172
 date_started: 2024.07.20
 tags: Java, 수학, 에라토스테네스의 체
