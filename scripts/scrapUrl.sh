@@ -22,6 +22,9 @@ find .. -name "*.md" | while read file; do
   if [[ $url == *"private"* ]]; then
     continue
   fi
+  if [[ $url == *"Java/out"* ]]; then
+    continue
+  fi
 
   # remove first path
   url=$(echo $url | cut -d'/' -f2-)
