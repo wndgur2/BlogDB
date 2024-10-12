@@ -7,52 +7,55 @@ import java.util.StringTokenizer;
 
 /*
 
-7
-1 2 1 3 1 2 1
-4
-1 3
-2 5
-3 3
-5 7
+5
+Ab3bd
 
-1
-0
-1
-1
+2
 
- */
+*/
+/**
+
+LCS를 활용하는 문제
+
+입력 문자열과
+입력 문자열을 거꾸로 뒤집은 문자열의
+LCS를 구하고
+그 길이를 제외한 만큼을 추가한다. 
+
+겹치지 않는 문자만 추가하는 원리인듯
+
+
+ex)
+
+ABCDEA의 reversed는
+AEDCBA
+
+LCS는 ABA로 3
+result = 6-3 = 3
+
+즉, ABCDEA를 팰린드롬으로 만들기 위해서는 ABA를 제외한 EDC를 추가한다.
+=> AEDCBCDEA가 될 수 있을 것
+
+*/
 public class Main {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	public static void main(String[] args) throws IOException{
 		int N = Integer.parseInt(br.readLine());
 		char[] chars = br.readLine().toCharArray();
-		
-		boolean[][] dp = new boolean[N][N]; // dp[i][j] = i~j가 팰린드롬? xx
-		
+		char[] reversed = new char[N];
 		for (int i = 0; i < N; i++) {
-			dp[i][i] = true;
-			if(i<N-1 && chars[i]==chars[i+1])
-				dp[i][i+1] = true;
+			reversed[i] = chars[N-i-1];
 		}
-		
-		for (int length = 3; length <= N; length++) {
-			for (int left = 0; left < N-length+1; left++) {
-				int right = left + length -1; // inclusive
-				if(chars[left]!=chars[right]) continue;
-				dp[left][right] = dp[left+1][right-1];
+		int[][] LCS = new int[N+1][N+1];
+		for (int i = 1; i < N+1; i++) {
+			for (int j = 1; j < N+1; j++) {
+				if(chars[i-1] == reversed[j-1]) {
+					LCS[i][j] = LCS[i-1][j-1] + 1;
+				} else {
+					LCS[i][j] = Math.max(LCS[i-1][j], LCS[i][j-1]);
+				}
 			}
 		}
-		
-		/*
-		
-		 제일 긴 팰린드롬을 찾고,
-		 나머지를 맞추기 위해 삽입을 하는데,
-		 삽입으로 인한 순서 밀림을 미리 고려한다?
-		 
-		 133321 -> 1
-		 33321 -> 2
-		 033321 -> 3
-		 
-		 */
+		System.out.println(N - LCS[N][N]);
 	}
 }
