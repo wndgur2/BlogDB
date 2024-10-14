@@ -1,6 +1,3 @@
-test
-private
-*.class
 /bin/
 /.classpath
 /.project

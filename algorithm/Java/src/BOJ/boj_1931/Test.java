@@ -1,4 +1,4 @@
-package boj_1931;
+package BOJ.boj_1931;
 import java.io.*;
 import java.util.Scanner;
 class Test{

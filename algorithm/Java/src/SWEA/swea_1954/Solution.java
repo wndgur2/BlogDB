@@ -1,4 +1,4 @@
-package solves.swea_1954;
+package SWEA.swea_1954;
 
 import java.io.BufferedReader;
 import java.io.IOException;

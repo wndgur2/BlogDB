@@ -1,4 +1,4 @@
-package SWEA_1208;
+package SWEA.swea_1208;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

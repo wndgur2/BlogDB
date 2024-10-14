@@ -1,4 +1,4 @@
-package boj_1644;
+package BOJ.boj_1644;
 
 import java.io.*;
 

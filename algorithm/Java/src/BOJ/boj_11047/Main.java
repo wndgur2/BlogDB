@@ -1,4 +1,4 @@
-package boj_11047;
+package BOJ.boj_11047;
 
 import java.io.*;
 

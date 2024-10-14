@@ -1,4 +1,4 @@
-package boj_27172;
+package BOJ.boj_27172;
 
 // 12:45
 // 13:26

@@ -1,4 +1,4 @@
-package boj_17103;
+package BOJ.boj_17103;
 import java.io.*;
 public class Main {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,4 +1,4 @@
-package boj_1929;
+package BOJ.boj_1929;
 
 import java.io.*;
 import java.util.Arrays;

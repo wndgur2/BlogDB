@@ -1,4 +1,4 @@
-package SWEA_1486;
+package SWEA.swea_1486;
 
 // import java.io.BufferedWriter;
 // import java.io.BufferedReader;
@@ -7,7 +7,7 @@ package SWEA_1486;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Solution {
+public class Solution2 {
 //    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static Scanner sc = new Scanner(System.in);
