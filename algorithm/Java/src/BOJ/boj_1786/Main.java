@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -28,6 +29,7 @@ public class Main {
 	
 	private static void kmp(char[] origin, char[] pattern) {
 		int[] pi = getPI(pattern);
+		System.out.println(Arrays.toString(pi));
 		int n = origin.length;
 		int plen = pattern.length;
 		int resN = 0;
