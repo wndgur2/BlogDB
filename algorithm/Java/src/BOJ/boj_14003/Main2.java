@@ -15,29 +15,21 @@ public class Main2 {
         int N = Integer.parseInt(br.readLine());
         int[] numbers = new int[N];
         int[] indexes = new int[N];
-        ArrayList<Integer> LIS = new ArrayList<>();
+        ArrayList<Integer> dp = new ArrayList<>();
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        for(int i=0; i<N; i++){
+        for(int i=0; i<N; i++)
             numbers[i] = Integer.parseInt(st.nextToken());
-        }
 
         for(int i=0; i<N; i++){
-            int idx = (-Collections.binarySearch(LIS, numbers[i]) -1);
-            // System.out.println("idx:" + idx + ", LIS.size(): " + LIS.size());
+            int idx = (-Collections.binarySearch(dp, numbers[i]) -1);
             if(idx<0) continue;
-            if(idx>= LIS.size()){
-                indexes[i] = LIS.size();
-                LIS.add(numbers[i]);
-            } else{
-                indexes[i] = idx;
-                LIS.set(idx, numbers[i]);
-            }
+            if(idx>= dp.size()) dp.add(numbers[i]);
+            else dp.set(idx, numbers[i]);
+            indexes[i] = idx;
         }
 
-        // System.out.println(LIS);
-        // System.out.println(Arrays.toString(indexes));
-        int curIdx = LIS.size()-1;
+        int curIdx = dp.size()-1;
         ArrayDeque<Integer> stack = new ArrayDeque<>(); 
         for(int i=N-1; i>=0; i--){
             if(indexes[i] == curIdx){
@@ -46,8 +38,9 @@ public class Main2 {
                 if(curIdx==-1) break;
             }
         }
+
         StringBuilder sb = new StringBuilder();
-        sb.append(LIS.size()).append("\n");
+        sb.append(dp.size()).append("\n");
         while(!stack.isEmpty())sb.append(stack.pop() + " ");
         System.out.println(sb.toString().trim());
     }
