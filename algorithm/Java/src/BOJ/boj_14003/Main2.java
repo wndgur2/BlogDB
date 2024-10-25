@@ -23,7 +23,7 @@ public class Main2 {
 
         for(int i=0; i<N; i++){
             int idx = (-Collections.binarySearch(dp, numbers[i]) -1);
-            if(idx<0) continue;
+            if(idx<0) continue; // !!!  반례: 0 2 2 1
             if(idx>= dp.size()) dp.add(numbers[i]);
             else dp.set(idx, numbers[i]);
             indexes[i] = idx;
