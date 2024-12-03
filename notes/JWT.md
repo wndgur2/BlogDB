@@ -1,7 +1,7 @@
 ---
 category: Study
 title: JWT(Json Web Token)
-date_started: 2024.06.14
+date_started: 2024.10.20
 tags: JWT, Authentication
 ---
 
