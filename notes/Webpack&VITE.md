@@ -15,7 +15,7 @@ tags: Web
 
 ### Webpack (https://webpack.js.org/)
 
-![webpack](images/webpack.png)
+![webpack](https://github.com/user-attachments/assets/f12830cc-dc8e-4c54-b2cf-9fae7fb69452)
 
 **Webpack**은 **모듈 번들링**을 위한 도구로, 모든 의존성을 처리하고 여러 파일을 하나로 묶어주는 역할을 합니다. 복잡한 설정을 통해 자바스크립트, CSS, 이미지 파일 등을 효율적으로 번들링할 수 있습니다. 그러나 Webpack은 **구성이 복잡**하고, **빌드 속도**가 느려질 수 있습니다.
 
@@ -23,7 +23,7 @@ tags: Web
 
 ### Vite (https://vite.dev/)
 
-![vite](images/vite.png)
+![vite](https://github.com/user-attachments/assets/163a9103-eb0f-4f9a-9c4a-7c00eb2b7287)
 
 반면, **Vite**는 Webpack의 단점을 보완하고자 만든 툴로, **빠른 개발 환경**을 제공하는 것이 특징입니다. Vite는 **ES 모듈(ESM)**을 기반으로 페이지를 빠르게 로드하고, 개발 중에는 **핫 모듈 리플레이스먼트(HMR)** 기능을 통해 페이지를 새로 고침하지 않고도 변경 사항을 즉시 반영할 수 있습니다. Vite는 **ESBuild**를 사용하여 트랜스파일링을 처리하는데, 이 덕분에 **빌드 속도**가 매우 빠릅니다.
 
