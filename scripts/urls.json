@@ -30,9 +30,10 @@
   "algorithm/sw_expert_academy/20934_방울마술/README.md",
   "algorithm/sw_expert_academy/12712_파리퇴치/README.md",
   "algorithm/sw_expert_academy/6485_삼성시의버스노선/README.md",
-  "notes/Webpack&VITE.md",
+  "notes/babel_esbuild.md",
   "notes/JWT.md",
   "notes/SSR_CSR.md",
+  "notes/Webpack_VITE.md",
   "notes/WEB.md",
   "notes/React.md",
   ""
