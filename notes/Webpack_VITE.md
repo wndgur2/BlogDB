@@ -110,7 +110,7 @@ Vite는 **Esbuild를** 사용해 의존성을 미리 번들링합니다. Esbuild
 
 **Esbuild**는 **Go 언어로 작성된** 트랜스파일러로, **Babel보다 훨씬 빠른 성능**을 자랑합니다. Esbuild는 최신 ECMAScript 문법을 구버전 브라우저에 맞게 변환하거나, TypeScript를 자바스크립트로 트랜스파일하는 작업을 매우 빠르게 처리할 수 있습니다. 그러나 **기능이 Babel보다 간단**하므로, 고급 기능이 필요할 경우 Babel을 사용하는 것이 좋습니다.
 
-> https://wndgur2.github.io/post/babel_esbuild
+> https://wndgur2.github.io/post/Babel_Esbuild
 
 ## 빌드 속도 개선을 위한 Vite와 Esbuild Migration
 
