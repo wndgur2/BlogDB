@@ -8,7 +8,7 @@ tags: web, transpiler, browser
 
 > Babel, esbuild 공식 문서를 정리한 내용입니다.
 
-![babel](https://babeljs.io/img/babel.svg)
+![babel](https://github.com/user-attachments/assets/bfb7cb3b-97a4-473f-9e73-43d522cb27c6)
 
 # Babel이란?
 
