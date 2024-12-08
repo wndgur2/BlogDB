@@ -7,7 +7,7 @@ tags: web, react
 ---
 
 # Recoil
-![recoil](https://github.com/user-attachments/assets/b3b63b7c-caab-4dfd-b380-1670087212df)
+![recoil](https://github.com/user-attachments/assets/0d82933d-af52-449b-a55f-3533f744da0b)
 
 **Recoil**은 React를 위한 상태 관리 라이브러리로, 컴포넌트 간의 상태를 공유하거나 상태 기반의 파생 데이터를 효율적으로 관리할 수 있도록 설계되었습니다. Recoil은 상태를 **Atom**(상태 단위)과 **Selector**(순수 함수)로 구성하며, 이를 통해 데이터 흐름 그래프를 생성합니다.
 
