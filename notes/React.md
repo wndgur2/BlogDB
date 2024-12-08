@@ -4,9 +4,10 @@ title: React
 date_started: 2024.06.14
 tags: react, web
 ---
+> react.dev를 읽으며 내가 이해한 방식과 받은 인상을 녹였다.
 
+![react](https://github.com/user-attachments/assets/39dde197-6a65-4744-a994-206efebdfdd8)
 
-react.dev를 읽으며 내가 이해한 방식과 받은 인상을 녹였다.
 
 # Hook
 
