@@ -22,21 +22,21 @@ tags: Web
 
 Babel은 최신 JavaScript 문법을 이전 버전의 JavaScript로 변환합니다. 예를 들어, ES2015의 화살표 함수는 ES5의 일반 함수로 변환됩니다.
 
-```js
+```javascript
 // Babel 입력: ES2015 화살표 함수
+[1, 2, 3].map((n) => n + 1)
 
-;[1, 2, 3].map((n) => n + 1)
-;[
-  // Babel 출력: ES5 등가 코드
-  (1, 2, 3),
-].map(function (n) {
-  return n + 1
-})
+// Babel 출력: ES5 등가 코드
+[1, 2, 3].map( 
+  function (n) {
+    return n + 1
+  }
+)
 ```
 
 ### 2. 폴리필 (Polyfill)
 
-Babel은 타겟 환경에서 지원되지 않는 기능을 추가하기 위해 폴리필(polyfill)을 사용할 수 있습니다. 예를 들어, `core-js`와 같은 서드파티 라이브러리를 통해 최신 JavaScript 기능을 사용할 수 있습니다.
+Babel은 타겟 환경에서 지원되지 않는 기능을 동작하도록 하는 폴리필(polyfill)을 지원합니다. 예를 들어, `core-js`와 같은 서드파티 라이브러리를 통해 최신 JavaScript 기능을 사용할 수 있습니다.
 
 ### 3. JSX 및 React 지원
 
@@ -48,22 +48,23 @@ Babel은 JSX 문법을 변환할 수 있습니다. React 개발에 필요한 `@b
 npm install --save-dev @babel/preset-react
 ```
 
-설정 예시
+jsx 예시
 
 ```jsx
 export default function DiceRoll() {
   const [num, setNum] = React.useState(Math.ceil(Math.random() \* 6));
 
   const handleClick = () => {
-setNum(Math.ceil(Math.random() \* 6));
-};
+    setNum(Math.ceil(Math.random() \* 6));
+  };
 
   return (
-
-  <div>
-    Your dice roll: {num}.
-    <button onClick={handleClick}>Click to get a new number</button>
-  </div>
+    <div>
+      Your dice roll: {num}.
+      <button onClick={handleClick}>
+        Click to get a new number
+      </button>
+    </div>
   );
 }
 ```
@@ -77,7 +78,7 @@ TypeScript 프리셋 설치
 npm install --save-dev @babel/preset-typescript
 ```
 
-예시
+ts 예시
 
 ```typescript
 function Greeter(greeting: string) {
@@ -91,6 +92,7 @@ function Greeter(greeting: string) {
 예시: 간단한 Babel 플러그인
 
 ```javascript
+// A plugin is just a function
 export default function ({ types: t }) {
   return {
     visitor: {
@@ -116,7 +118,7 @@ export default function ({ types: t }) {
 - **ECMAScript (ES)**: JavaScript의 표준 사양.
 - **Compiler (컴파일러)**: 코드를 다른 형태로 변환해주는 프로그램.
 - **Syntax (문법)**: 프로그래밍 언어의 구조와 규칙.
-- **Polyfill (폴리필)**: 특정 기능이 없는 환경에서도 작동하도록 도와주는 코드.
+- **Polyfill (폴리필)**: 특정 기능이 없는 환경에서도 해당 로직이 작동하도록 도와주는 코드.
 
 Babel은 최신 JavaScript 개발에서 중요한 도구로, 호환성과 확장성을 동시에 제공합니다. ✨
 
