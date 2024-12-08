@@ -2,10 +2,12 @@
 category: Study
 title: Web
 date_started: 2024.06.14
-tags: Web
+date_updated: 2024.12.08
+tags: web
 ---
 
-> 참고 자료: How the web works - MDN(https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+![naver](https://github.com/user-attachments/assets/4621b2f2-f1e1-4b47-b0c8-9e355ea46f37)
+
 
 # WEB Client 기본 동작
 
@@ -40,4 +42,10 @@ tags: Web
 
 이렇게 브라우저가 DOM tree와 CSSOM tree를 생성하고 JavaScript를 실행하면서, 페이지 정보가 창에 띄워지고, 사용자가 상호작용할 수 있게 된다.
 
-> 참고 자료: [How the web works - MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+
+---
+
+### 참고 자료
+
+- [How the web works - MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+

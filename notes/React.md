@@ -1,11 +1,10 @@
 ---
 category: Study
-title: ReactJs
+title: React
 date_started: 2024.06.14
-tags: ReactJs, Web, Browser
+tags: react, web
 ---
 
-> 출처: [React.dev](https://react.dev/)
 
 react.dev를 읽으며 내가 이해한 방식과 받은 인상을 녹였다.
 
@@ -132,3 +131,8 @@ In JavaScript, **a function () {} or () => {} always creates a different functio
 ### Redux
 
 상태 관리 툴 for browser. (vs Mobx(object-oriented))
+
+---
+
+### 참고
+- [React.dev](https://react.dev/)

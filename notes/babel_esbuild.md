@@ -3,7 +3,7 @@ category: Study
 title: Babel_Esbuild
 date_started: 2024.12.06
 date_updated: 2024.12.06
-tags: Web
+tags: web, transpiler, browser
 ---
 
 > Babel, esbuild 공식 문서를 정리한 내용입니다.

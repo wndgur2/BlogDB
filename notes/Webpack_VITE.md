@@ -3,7 +3,7 @@ category: Study
 title: Webpack_Vite
 date_started: 2024.12.04
 date_updated: 2024.12.06
-tags: Web
+tags: web, bundler
 ---
 
 > webpack, vite 공식 문서를 정리한 내용입니다.
