@@ -42,7 +42,8 @@ const fontSizeState = atom({
 
 #### Atom 읽기 및 쓰기
 `useRecoilState()` 훅을 사용하여 Atom의 값을 읽거나 업데이트할 수 있습니다. 
-```js
+
+```javascript
 function FontButton() {
   const [fontSize, setFontSize] = useRecoilState(fontSizeState);
   return (
@@ -52,6 +53,7 @@ function FontButton() {
   );
 }
 ```
+
 ---
 
 ### 2. Selectors
