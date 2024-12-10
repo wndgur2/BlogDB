@@ -2,12 +2,13 @@
 category: Study
 title: React
 date_started: 2024.06.14
+date_updated: 2024.12.10
 tags: react, web
 ---
-> react.dev를 읽으며 내가 이해한 방식과 받은 인상을 녹였다.
 
-![react](https://github.com/user-attachments/assets/39dde197-6a65-4744-a994-206efebdfdd8)
+> 리액트 개념 정리
 
+![react](https://github.com/user-attachments/assets/4b3064ae-da83-42a2-968e-8c47915f9571)
 
 # Hook
 
@@ -123,14 +124,28 @@ declares a ref. You can hold any value in it, but most often it's used to hold a
 In JavaScript, **a function () {} or () => {} always creates a different function**, similar to how the {} object literal always creates a new object. Normally, this wouldn't be a problem, but it means that ShippingForm props will never be the same, and your memo optimization won't work. This is where useCallback comes in handy.<br>
 리랜더링 시 같은 함수를 계속 생성하는 것을 방지한다.
 
+### Custom Hook
+
+Custom hook과 javascript function의 차이는 뭘까?
+
 ### Component
 
-### Custom Hook
+React lets you create components, reusable UI elements for your app.
+
+In a React app, every piece of UI is a component.
+
+React components are regular JavaScript functions except:
+
+Their names always begin with a capital letter.
+They return JSX markup.
 
 ### Context
 
+전역 State 관리
+
 ### Redux
 
+전역 State 관리 + a
 상태 관리 툴 for browser. (vs Mobx(object-oriented))
 
 ---
