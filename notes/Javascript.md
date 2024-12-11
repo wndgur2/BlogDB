@@ -164,7 +164,8 @@ instance를 만든 후에 Property를 추가해도 default value를 가지는 �
 
 Built-in JavaScript 생성자들  
 JavaScript has built-in 생성자들 for all native objects:  
-```js
+
+```javascript
 new Object()   // A new Object object
 new Array()    // A new Array object
 new Map()      // A new Map object
@@ -186,7 +187,7 @@ Use pattern literals /()/ instead of new RegExp().
 
 Use function expressions () {} instead of new Function().
 
-```js
+```javascript
 "";           // primitive string
 0;            // primitive number
 false;        // primitive boolean
