@@ -6,6 +6,8 @@ date_updated: 2024.12.10
 tags: javascript
 ---
 
+> JS를 한 번 정리해보고자 시작했다. 모르거나 모호했던 내용을 적었다.
+
 # javascript 정리
 
 <img width="720" alt="image" src="https://github.com/user-attachments/assets/20885936-1b8c-48f4-b5f5-11bc362849b6">
@@ -86,9 +88,7 @@ console.log(~~5.512);
 // 5
 ```
 
-### Object
-
-In JavaScript, Objects are King.
+## In JavaScript, Objects are King.
 If you Understand Objects, you Understand JavaScript.
 Objects are containers for Properties and Methods.
 
@@ -98,18 +98,18 @@ Methods are Functions stored as Properties.
 
 Properties can be primitive values, functions, or even other objects.
 
-In JavaScript, almost "everything" is an object.
+오브젝트 목록
+- Objects
+- Maths
+- Functions
+- Dates
+- Arrays
+- Maps
+- Sets
 
-Objects are objects
-Maths are objects
-Functions are objects
-Dates are objects
-Arrays are objects
-Maps are objects
-Sets are objects
 All JavaScript values, except primitives, are objects.
 
-constructor: Every JavaScript object has a constructor property that refers to the constructor function that created it.
+생성자: 모든 자바스크립트 오브젝트는 생성자 property가 있다. 이는 생성자 함수라고 불린다.
 
 ```javascript
 const x = {};
@@ -130,7 +130,7 @@ console.log(myFather);
 
 ```
 
-Property 추가하기
+Property 추가하기  
 
 ```javascript
 
@@ -162,8 +162,8 @@ instance를 만든 후에 Property를 추가해도 default value를 가지는 �
 - `Person`의 prototype에 `area` property를 추가하면, `myFather`의 prototype chain에도 `area` property가 추가된다.
 - `myFather`의 prototype chain에 `area` property가 없기 때문에 `Person`의 prototype chain을 타고 올라가 `area` property를 찾는다.
 
-Built-in JavaScript Constructors
-JavaScript has built-in constructors for all native objects:  
+Built-in JavaScript 생성자들  
+JavaScript has built-in 생성자들 for all native objects:  
 ```js
 new Object()   // A new Object object
 new Array()    // A new Array object
@@ -196,6 +196,10 @@ false;        // primitive boolean
 /()/          // regexp object
 function(){}; // function
 ```
+
+### Prototypes
+
+All JavaScript objects inherit properties and methods from a prototype.
 
 ### Primitives
 
