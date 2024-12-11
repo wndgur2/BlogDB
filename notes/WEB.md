@@ -6,7 +6,8 @@ date_updated: 2024.12.08
 tags: web
 ---
 
-![naver](https://github.com/user-attachments/assets/4621b2f2-f1e1-4b47-b0c8-9e355ea46f37)
+<img src= 'https://github.com/user-attachments/assets/4621b2f2-f1e1-4b47-b0c8-9e355ea46f37'
+alt='naver' />
 
 
 # WEB Client 기본 동작

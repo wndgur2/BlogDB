@@ -26,7 +26,8 @@ tags: web, bundler
 
 ## Webpack: 전통적이지만 강력한 모듈 번들러
 
-![webpack](https://github.com/user-attachments/assets/8c850ae2-cf4a-4975-b3b7-847f51043a8a)
+<img src= 'https://github.com/user-attachments/assets/8c850ae2-cf4a-4975-b3b7-847f51043a8a'
+alt='webpack' />
 
 ### 개요
 
@@ -72,7 +73,8 @@ module.exports = {
 
 ## Vite: 차세대 번들러
 
-![vite](https://github.com/user-attachments/assets/d1d61b5e-cc58-4619-8c2a-c058c7e604e2)
+<img src= 'https://github.com/user-attachments/assets/d1d61b5e-cc58-4619-8c2a-c058c7e604e2'
+alt='vite' />
 
 ### 개요
 
