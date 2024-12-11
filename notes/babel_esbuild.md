@@ -6,10 +6,10 @@ date_updated: 2024.12.06
 tags: web, transpiler, browser
 ---
 
-> Babel, esbuild 공식 문서를 정리한 내용입니다.
-
 <img src= 'https://github.com/user-attachments/assets/bfb7cb3b-97a4-473f-9e73-43d522cb27c6'
 alt='babel'>
+
+> Babel, esbuild 공식 문서를 정리한 내용입니다.
 
 # Babel이란?
 

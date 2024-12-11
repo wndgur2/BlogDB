@@ -6,10 +6,10 @@ date_updated: 2024.12.10
 tags: react, web
 ---
 
-> 리액트 개념 정리
-
 <img src= 'https://github.com/user-attachments/assets/4b3064ae-da83-42a2-968e-8c47915f9571'
 alt='react' />
+
+> 리액트 개념 정리
 
 # Hook
 

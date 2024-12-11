@@ -6,11 +6,12 @@ date_updated: 2024.12.10
 tags: javascript
 ---
 
-> JS를 한 번 정리해보고자 시작했다. 모르거나 모호했던 내용을 적었다.
+<img width="720" alt="image" src="https://github.com/user-attachments/assets/20885936-1b8c-48f4-b5f5-11bc362849b6">
+
+> Javascript의 모르거나 모호했던 내용을 모아 정리했다.
 
 # javascript 정리
 
-<img width="720" alt="image" src="https://github.com/user-attachments/assets/20885936-1b8c-48f4-b5f5-11bc362849b6">
 
 > [w3schools - JS Tutorial](https://www.w3schools.com/js)
 

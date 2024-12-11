@@ -9,7 +9,6 @@ tags: web
 <img src= 'https://github.com/user-attachments/assets/4621b2f2-f1e1-4b47-b0c8-9e355ea46f37'
 alt='naver' />
 
-
 # WEB Client 기본 동작
 
 네이버에 접속하려 한다. 그래서 주소창에 _www.naver.com_을 입력하고 엔터를 친다. 여느 때와 다름 없이 네이버 페이지가 로딩된다. 이미지가 보여지고, HTML에 CSS가 입혀진 모습이다. 버튼들이 각자의 역할을 수행하고 있다. 무슨 일이 일어난 것일까?

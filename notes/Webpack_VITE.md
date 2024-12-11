@@ -6,9 +6,9 @@ date_updated: 2024.12.06
 tags: web, bundler
 ---
 
-> webpack, vite 공식 문서를 정리한 내용입니다.
-
 <img src='https://github.com/user-attachments/assets/b6982d5e-cfd8-484d-a2ee-31019ff4088e' alt='webpack' width='200px' />
+
+> webpack, vite 공식 문서를 정리한 내용입니다.
 
 # Web Bundler: 웹 애플리케이션을 효율적으로 관리하기 위한 도구
 

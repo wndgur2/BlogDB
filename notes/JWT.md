@@ -2,8 +2,12 @@
 category: Study
 title: JWT(Json Web Token)
 date_started: 2024.10.20
+date_updated: 2024.12.11
 tags: jwt, authentication
 ---
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/c5361105-709b-4404-96f8-64aa25557936">
+
 
 # JWT(Json Web Token)
 
