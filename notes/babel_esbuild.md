@@ -2,7 +2,7 @@
 category: Study
 title: Babel_Esbuild
 date_started: 2024.12.06
-date_updated: 2024.12.06
+date_updated: 2024.12.11
 tags: web, transpiler, browser
 ---
 
