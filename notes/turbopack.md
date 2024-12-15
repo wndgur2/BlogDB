@@ -7,6 +7,7 @@ tags: web, bundler, browser
 ---
 
 <img src='https://github.com/user-attachments/assets/bf424249-6c33-4964-a258-0c9b502fbcf3' alt='turbopack' />
+<img src='https://github.com/user-attachments/assets/bf42424912312311212' alt='turbopack' />
 
 # Turbopack: RSC와 TS를 위한 고성능 번들러
 
