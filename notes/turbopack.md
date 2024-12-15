@@ -8,7 +8,7 @@ tags: web, bundler
 
 <img src='https://github.com/user-attachments/assets/bf424249-6c33-4964-a258-0c9b502fbcf3' alt='turbopack' />
 
-# Turbopack: RSC(React Server Components)와 TypeScript를 위한 고성능 번들러
+# Turbopack: RSC와 TS를 위한 고성능 번들러
 
 웹 개발에서 **번들러**(Bundler)는 현대적인 웹 애플리케이션을 만드는 데 필수적인 도구입니다. 오늘은 **Turbopack**이라는 Next.js에 최적화된 최신 번들러를 소개하려 합니다. 왜 Turbopack이 필요한지, 그리고 기존 번들러와 무엇이 다른지 알아보겠습니다.
 
