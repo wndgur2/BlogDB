@@ -19,13 +19,13 @@ tags: web, bundler
 
 ---
 
-#### Turbopack이 등장한 배경
+### Turbopack이 등장한 배경
 
 Next.js 팀은 성능 개선을 위해 수많은 JS 기반 도구를 교체해왔습니다. Babel과 Terser를 대체했고, 이제 목표는 Webpack을 대체하는 것이었습니다. 그러나 시장에 나와 있는 다른 번들러들을 검토한 끝에, 우리는 새로운 번들러를 직접 개발하기로 결정했습니다. **왜냐하면 Turbopack은 기존 번들러들이 해결하지 못했던 문제들을 혁신적으로 해결하기 때문입니다.**
 
 ---
 
-#### Turbopack의 주요 특징
+### Turbopack의 주요 특징
 
 **1. 통합 그래프 (Unified Graph)**
 
@@ -55,7 +55,7 @@ Turbo 엔진은 작업 결과를 캐싱하여 동일한 작업을 반복하지 �
 
 ---
 
-#### 시작하기
+### 시작하기
 
 Turbopack은 JavaScript와 TypeScript에 최적화된 **증분 번들러**로, Rust로 작성되었습니다. Webpack과 Next.js를 개발한 Vercel 팀이 10년간의 경험과 최신 기술을 바탕으로 설계한 Turbopack은 미래의 컴퓨팅을 지원할 준비가 되어 있습니다.
 
@@ -77,7 +77,7 @@ npm run dev -- --turbopack
 
 ---
 
-#### 요약: Turbopack을 선택한 이유
+### 요약: Turbopack을 선택한 이유
 
 Turbopack은 다음과 같은 이유로 탄생했습니다:
 
@@ -90,7 +90,7 @@ Turbopack은 다음과 같은 이유로 탄생했습니다:
 
 ---
 
-#### 참고
+### 참고
 
 - https://nextjs.org/docs/app/api-reference/turbopack
 - https://turbo.build/pack/docs
