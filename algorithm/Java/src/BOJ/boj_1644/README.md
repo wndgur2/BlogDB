@@ -4,7 +4,7 @@ title: 소수의 연속합
 site: BOJ
 number: 1644
 date_started: 2024.07.19
-tags: Java, 수학, 투포인터, 에라토스테네스의체
+tags: Java, 수학, 투포인터, 에라토스테네스의 체
 level: G3
 ---
 
