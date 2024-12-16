@@ -1,6 +1,6 @@
 ---
 category: Algorithm
-title: 에라토스테네스의체
+title: 에라토스테네스의 체
 site: BOJ
 number: 2960
 date_started: 2024.07.18
