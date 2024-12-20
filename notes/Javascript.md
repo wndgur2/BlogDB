@@ -89,15 +89,16 @@ console.log(~~5.512);
 // 5
 ```
 
-## In JavaScript, Objects are King.
-If you Understand Objects, you Understand JavaScript.
-Objects are containers for Properties and Methods.
+## 손님? 아니, Object가 왕이다.
+"If you Understand Objects, you Understand JavaScript."
 
-Properties are named Values.
+오브젝트는 프로퍼티와 메소드를 담는 컨테이너이다.
 
-Methods are Functions stored as Properties.
+프로퍼티는 이름이 있는 값이다.
 
-Properties can be primitive values, functions, or even other objects.
+메소드는 프로퍼티로서 저장된 함수이다.
+
+프로퍼티는 원시값, 함수, 또는 다른 오브젝트가 될 수 있다.
 
 오브젝트 목록
 - Objects
@@ -108,9 +109,9 @@ Properties can be primitive values, functions, or even other objects.
 - Maps
 - Sets
 
-All JavaScript values, except primitives, are objects.
+원시값을 제외한 모든 자바스크립트 값이 오브젝트에 해당한다.
 
-생성자: 모든 자바스크립트 오브젝트는 생성자 property가 있다. 이는 생성자 함수라고 불린다.
+#### 생성자: 모든 자바스크립트 오브젝트는 생성자 property가 있다. 이는 생성자 함수라고 불린다.
 
 ```javascript
 const x = {};
@@ -176,17 +177,18 @@ new RegExp()   // A new RegExp object
 new Function() // A new Function object
 ```
 
-Note:
-The Math() object is not in the list. Math is a global object. The new keyword cannot be used on Math.
+> Note:
+`Math`가 없는데 이는 global object이다. `new` 키워드는 `Math`에 사용될 수 없다.
 
-### 알고 있었니?
-Use object literals {} instead of new Object().
+### 알고 있지? 간단한 생성자
 
-Use array literals [] instead of new Array().
+`new Object()` 대신 `{}`를 사용하자.
 
-Use pattern literals /()/ instead of new RegExp().
+`new Array()` 대신 `[]`를 사용하자.
 
-Use function expressions () {} instead of new Function().
+`new RegExp()` 대신 `/()/`를 사용하자.
+
+`new Function()` 대신 `() {}`를 사용하자.
 
 ```javascript
 "";           // primitive string
@@ -201,28 +203,29 @@ function(){}; // function
 
 ### Prototypes
 
-All JavaScript objects inherit properties and methods from a prototype.
+모든 JavaScript 오브젝트는 prototype의 property와 methods를 상속한다.
 
 ### Primitives
 
-A primitive value is a value that has no properties or methods.
+primitives는 property와 method가 없는 값이다.
 
-3.14 is a primitive value
+3.14는 primitive value이다.
 
-A primitive data type is data that has a primitive value.
+Primitive 데이터 타입은 primitive value를 값으로 하는 데이터이다.
 
-JavaScript defines 7 types of primitive data types:
+#### 7개의 자바스크립트 primitive 데이터 타입:
 
-string
-number
-boolean
-null
-undefined
-symbol
-bigint
+- string
+- number
+- boolean
+- null
+- undefined
+- symbol
+- bigint
 
-They are immutable (cannot be changed).
-Objects are mutable (can be changed).
+#### 특징
+- immutable: 수정 불가.
+- Object는 mutable: 수정 가능.
 
 
 ### String
@@ -232,10 +235,52 @@ Template Strings은 ES6 (JavaScript 2016)에 나왔다.
 
 Templates은 백틱으로 감싸인 문자열이다. (\`This is a template string\`)
 
-Templates allow single and double quotes inside a string:
+template string 안에 single quote(')와 double quote(")를 사용할 수 있다.
 
 ```javascript
 let text = `He's often called "Johnny"`;
+```
+
+#### slice(i, j)
+i에서 j-1까지의 문자열을 반환한다.
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+console.log(str.slice(7, 13));
+console.log(str.slice(-12, 13));
+console.log(str.slice(-12, -6));
+// Banana
+// Banana
+// Banana
+```
+
+#### substring(i, j)
+
+slice와 비슷하지만 음수를 받을 수 없다.
+받으면 0으로 처리한다.
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+console.log(1, str.substring(7, 13));
+// 1 Banana
+console.log(2, str.substring(-12, 13));
+// 2 Apple, Banana
+console.log(3, str.substring(-12, -6));
+// 3 
+```
+
+#### substr(i, length) ( deprecated )
+
+i부터 length만큼의 문자열을 반환한다.
+
+```javascript
+let str = "Apple, Banana, Kiwi";
+console.log(str.substr(7, 6));
+// Banana
+console.log(str.substr(-12, 6));
+// Banana
+console.log(str.substr(-12, -6));
+// 
 ```
 
 ### generator function
