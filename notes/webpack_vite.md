@@ -26,8 +26,7 @@ tags: web, bundler, browser
 
 ## Webpack: 전통적이지만 강력한 모듈 번들러
 
-<img src= 'https://github.com/user-attachments/assets/8c850ae2-cf4a-4975-b3b7-847f51043a8a'
-alt='webpack' />
+<img src= 'https://github.com/user-attachments/assets/8c850ae2-cf4a-4975-b3b7-847f51043a8a' alt='webpack' />
 
 ### 개요
 
