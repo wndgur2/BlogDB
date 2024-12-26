@@ -3,7 +3,7 @@ category: Study
 title: React
 date_started: 2024.06.14
 date_updated: 2024.12.10
-tags: react, web
+tags: react, spa
 ---
 
 <img src= 'https://github.com/user-attachments/assets/4b3064ae-da83-42a2-968e-8c47915f9571'

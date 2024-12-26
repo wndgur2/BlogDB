@@ -3,7 +3,7 @@ category: Study
 title: react-query
 date_started: 2024.12.26
 date_updated: 2024.12.26
-tags: web, state-management, react, redux
+tags: state-management, react, redux
 ---
 
 <img src="https://github.com/user-attachments/assets/f20fe75b-d444-4054-97ba-f6380e84f03d" alt='react-query' />

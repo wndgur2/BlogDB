@@ -3,7 +3,7 @@ category: Study
 title: Webpack_Vite
 date_started: 2024.12.04
 date_updated: 2024.12.06
-tags: web, bundler, browser
+tags: bundler, browser
 ---
 
 <img src='https://github.com/user-attachments/assets/b6982d5e-cfd8-484d-a2ee-31019ff4088e' alt='webpack' width='200px' />

@@ -2,7 +2,7 @@
 category: Study
 title: SSR
 date_started: 2024.06.14
-tags: web
+tags: theory
 ---
 
 # SSR (vs CSR)

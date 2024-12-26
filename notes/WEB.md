@@ -3,7 +3,7 @@ category: Study
 title: Web
 date_started: 2024.06.14
 date_updated: 2024.12.08
-tags: web
+tags: theory
 ---
 
 <img src= 'https://github.com/user-attachments/assets/4621b2f2-f1e1-4b47-b0c8-9e355ea46f37'

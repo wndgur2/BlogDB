@@ -3,7 +3,7 @@ category: Study
 title: Recoil
 date_started: 2024.12.08
 date_updated: 2024.12.25
-tags: web, state-management, react
+tags: state-management, react
 ---
 
 <img src='https://github.com/user-attachments/assets/8f8c6115-e777-42cf-9187-11974be227b6' alt='recoil' width='200px' />

@@ -3,7 +3,7 @@ category: Study
 title: Babel_Esbuild
 date_started: 2024.12.06
 date_updated: 2024.12.11
-tags: web, transpiler, browser
+tags: transpiler, browser
 ---
 
 <img src= 'https://github.com/user-attachments/assets/bfb7cb3b-97a4-473f-9e73-43d522cb27c6'
