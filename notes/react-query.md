@@ -6,6 +6,10 @@ date_updated: 2024.12.26
 tags: web, state-management, react, redux
 ---
 
+<img src="https://github.com/user-attachments/assets/f20fe75b-d444-4054-97ba-f6380e84f03d" alt='react-query' />
+
+
+
 # React Query란 무엇인가? (Redux와의 비교)
 
 **React Query**는 데이터 페칭, 캐싱, 동기화, 그리고 업데이트를 간단하고 효율적으로 처리할 수 있도록 도와주는 **상태 관리 라이브러리**입니다. 주로 **비동기 서버 상태**를 관리하기 위해 사용되며, 클라이언트 상태 관리에 초점을 둔 **Redux**와는 다른 목적을 가지고 있습니다.
