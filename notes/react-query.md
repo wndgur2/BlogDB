@@ -80,7 +80,7 @@ tags: web, state-management, react, redux
 
 ---
 
-## **한국어 용어 설명**
+## **용어 설명**
 - **선언적(Declarative)**: "어떻게"가 아닌 "무엇을" 해야 하는지 명시하는 프로그래밍 방식.
 - **자동 캐싱(Auto Caching)**: 데이터를 임시로 저장하여 다시 요청하는 시간을 줄이는 기술.
 - **비동기 상태 관리(Asynchronous State Management)**: 네트워크 요청처럼 시간이 걸리는 작업의 상태를 추적하고 관리하는 것.
