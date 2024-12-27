@@ -143,5 +143,5 @@ Recoil은 간단한 API와 React 친화적인 방식으로, 상태 관리의 복
 
 ---
 
-### 참고
+### 참고 자료
 - https://recoiljs.org/
