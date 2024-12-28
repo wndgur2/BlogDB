@@ -3,7 +3,7 @@ category: Study
 title: firebase
 date_started: 2024.12.26
 date_updated: 2024.12.26
-tags: firebase, cloud-service, database
+tags: firebase, cloud-service
 ---
 
 <img src='https://github.com/user-attachments/assets/8faf0ab9-0da6-418d-9812-e2b844b8aa3e' alt='firebase' width='640px' />

@@ -6,8 +6,7 @@ date_updated: 2024.12.20
 tags: javascript, ECMA
 ---
 
-
-![string](https://github.com/user-attachments/assets/de863d94-0958-4417-9e4f-49180d36109d)
+<img src="https://github.com/user-attachments/assets/de863d94-0958-4417-9e4f-49180d36109d" width="640" />
 
 
 ### Template Strings  
