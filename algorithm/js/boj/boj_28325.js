@@ -18,11 +18,9 @@ if(answer==0){
   let length=0
   for(let i=firstEmptyIndex; i<firstEmptyIndex+N; i++){
     const index = i%N
-    // console.log('current room: ', index+1)
     if(rooms[index]==0) length++
     else{
       answer += BigInt(Math.ceil(length/2))
-      // console.log('answer:', answer)
       length=0
     }
   }
