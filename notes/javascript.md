@@ -8,6 +8,11 @@ tags: javascript, web-api, call-stack, event-loop, task-queue
 
 > Javascript의 내부 동작 방식을 정리했다.
 
+# JIT (Just In Time) 컴파일러
+Javascript는 JIT(Just In Time) 방식으로 사용하여 코드를 컴파일하고 실행한다. JIT는 런타임에 코드를 코드를 컴파일하는 것을 말한다. JIT 컴파일러는 코드를 실행하기 전에 최적화하여 성능을 향상시키며 프로그램의 적응력을 높인다.
+
+![Image](https://github.com/user-attachments/assets/e0b597ae-ae1b-4ad8-b8c7-d7cd593d7be3)
+
 # Javascript, Under the Hood
 
 > Javascript runtime을 이해하는 데에 많은 도움이 되는 영상 [Scotland JS](https://vimeo.com/96425312)
@@ -36,6 +41,6 @@ Task Queue는 Web API에서 비동기 작업이 완료되었을 때, 해당 작�
 ## Event Loop
 Event Loop는 Call Stack과 Task Queue를 연결하는 역할을 한다. Call Stack이 비어있을 때, Task Queue에 있는 작업을 Call Stack으로 가져와 실행한다. 이를 통해 비동기 작업을 처리할 수 있다.
 
-### 이를 도식화하면 아래와 같다.
+이를 도식화하면 아래와 같다.
 
 ![Image](https://github.com/user-attachments/assets/d91142a0-fb35-453c-88ea-de490b67d0b4)
