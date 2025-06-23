@@ -227,11 +227,6 @@ Primitive 데이터 타입은 primitive value를 값으로 하는 데이터이�
 - immutable: 수정 불가.
 - Object는 mutable: 수정 가능.
 
-
-### String
-
-[javascript_string](https://wndgur2.github.io/post/javascript_string)
-
 ### generator function
 
 Generator Function이란?
