@@ -9,7 +9,9 @@ tags: javascript, web-api, call-stack, event-loop, task-queue
 > Javascript의 내부 동작 방식을 정리했다.
 
 # JIT (Just In Time) 컴파일러
-Javascript는 JIT(Just In Time) 방식으로 사용하여 코드를 컴파일하고 실행한다. JIT는 런타임에 코드를 코드를 컴파일하는 것을 말한다. JIT 컴파일러는 코드를 실행하기 전에 최적화하여 성능을 향상시키며 프로그램의 적응력을 높인다.
+Javascript는 JIT(Just In Time) 방식으로 코드를 컴파일하고 실행한다. JIT는 런타임에 코드를 컴파일한다는 의미이며, 코드를 파싱한 후 인터프리터 + 최적화가 더해진 과정이다. JIT 컴파일러는 코드를 실행하기 전에 최적화하여 성능을 향상시키며 프로그램의 적응력을 높인다.
+
+컴파일 방식에 관해서는 컴파일러 + 인터프리터 + 최적화라고 이해하고 넘어갔다. (2025.06.23: 메모리 및 동작 환경을 이해하는 목적이므로)
 
 ![Image](https://github.com/user-attachments/assets/e0b597ae-ae1b-4ad8-b8c7-d7cd593d7be3)
 
