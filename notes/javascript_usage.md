@@ -3,7 +3,7 @@ category: Study
 title: Javascript Usage
 date_started: 2024.12.10
 date_updated: 2025.06.23
-tags: javascript, ECMA, stirng
+tags: javascript, ECMA, string
 ---
 
 <img width="720" alt="image" src="https://github.com/user-attachments/assets/20885936-1b8c-48f4-b5f5-11bc362849b6">
