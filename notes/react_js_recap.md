@@ -1,6 +1,6 @@
 ---
 category: Study
-title: 실용 React / JS 메모
+title: 실용 React, JS 메모
 date_started: 2025.08.13
 date_updated: 2025.08.14
 tags: javascript, react
