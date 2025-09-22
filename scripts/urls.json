@@ -39,6 +39,8 @@
   "notes/ssr_csr.md",
   "notes/javascript.md",
   "notes/algorithm/주사위_고르기.md",
+  "notes/algorithm/도둑질.md",
+  "notes/algorithm/카운트_디운.md",
   "notes/recoil.md",
   "notes/react-query.md",
   "notes/webpack_vite.md",
