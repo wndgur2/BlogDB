@@ -4,7 +4,7 @@ title: 숫자배열회전
 site: SWEA
 number: 1961
 date_started: 2024.07.04
-tags: 구현, Python
+tags: 구현, python
 level: D2
 ---
 

@@ -4,7 +4,7 @@ title: 마법사 상어와 블리자드
 site: BOJ
 number: 21611
 date_started: 2023.07.07
-tags: 구현, Cpp
+tags: 구현, cpp
 level: G1
 ---
 

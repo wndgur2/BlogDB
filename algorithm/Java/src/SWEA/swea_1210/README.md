@@ -4,7 +4,7 @@ title: Ladder1
 site: SWEA
 number: 1210
 date_started: 2024.07.14
-tags: JAVA, 구현
+tags: java, 구현
 level: D4
 ---
 

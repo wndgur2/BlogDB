@@ -4,7 +4,7 @@ title: 최대 상금
 site: SWEA
 number: 1244
 date_started: 2024.06.16
-tags: DFS, Python
+tags: DFS, python
 level: D3
 ---
 

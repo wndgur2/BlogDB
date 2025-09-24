@@ -4,7 +4,7 @@ title: 방울마술
 site: SWEA
 number: 20934
 date_started: 2024.05.09
-tags: 구현, Python
+tags: 구현, python
 level: D3
 ---
 

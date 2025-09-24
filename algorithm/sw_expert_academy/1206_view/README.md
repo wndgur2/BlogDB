@@ -4,7 +4,7 @@ title: View
 site: SWEA
 number: 1206
 date_started: 2024.05.10
-tags: Python, 구현
+tags: python, 구현
 level: D3
 ---
 

@@ -4,7 +4,7 @@ title: 수 나누기 게임
 site: BOJ
 number: 27172
 date_started: 2024.07.20
-tags: Java, 수학, 에라토스테네스의 체
+tags: java, 수학, 에라토스테네스의_체
 level: G5
 ---
 

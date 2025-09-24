@@ -4,7 +4,7 @@ title: 삼성시의 버스 노선
 site: SWEA
 number: 6485
 date_started: 2024.05.19
-tags: 스택, Python
+tags: 스택, python
 level: D3
 ---
 

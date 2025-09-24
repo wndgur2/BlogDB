@@ -4,7 +4,7 @@ title: 수영장
 site: SWEA
 number: 1952
 date_started: 2024.05.13
-tags: DP, Python
+tags: DP, python
 level: 모의 역량
 ---
 

@@ -4,7 +4,7 @@ title: 최적 경로
 site: SWEA
 number: 1247
 date_started: 2024.05.16
-tags: DFS, 순열, Python
+tags: DFS, 순열, python
 level: D5
 ---
 

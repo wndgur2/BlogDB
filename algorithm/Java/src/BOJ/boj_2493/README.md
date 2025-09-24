@@ -4,7 +4,7 @@ title: 탑
 site: BOJ
 number: 2493
 date_started: 2024.07.18
-tags: Java, 스택
+tags: java, 스택
 level: G5
 ---
 

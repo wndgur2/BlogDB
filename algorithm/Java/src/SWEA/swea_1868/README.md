@@ -4,7 +4,7 @@ title: 파핑파핑 지뢰찾기
 site: SWEA
 number: 1868
 date_started: 2024.07.15
-tags: Java, 구현
+tags: java, 구현
 level: D4
 ---
 

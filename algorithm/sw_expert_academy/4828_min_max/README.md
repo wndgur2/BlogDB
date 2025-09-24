@@ -4,7 +4,7 @@ title: min max
 site: SWEA
 number: 4828
 date_started: 2024.
-tags: Python
+tags: python
 ---
 
 ## min(), max()

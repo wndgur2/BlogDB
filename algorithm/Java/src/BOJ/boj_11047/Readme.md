@@ -3,7 +3,7 @@ category: Algorithm
 title: 동전 0
 number: 11047
 date_started: 2024.07.21
-tags: Java, 그리디
+tags: java, 그리디
 level: S4
 site: BOJ
 ---

@@ -4,7 +4,7 @@ title: 공평한 분배2
 site: SWEA
 number: 20728
 date_started: 2024.05.19
-tags: 정렬, Python
+tags: 정렬, python
 level: D3
 ---
 

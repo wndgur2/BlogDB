@@ -4,7 +4,7 @@ title: 가장 긴 증가하는 부분 수열 5
 site: 백준
 number: 14003
 date_started: 2024.10.25
-tags: Java, LIS
+tags: java, LIS
 level: P5
 ---
 # [백준 14003. 가장 긴 증가하는 부분 수열 5](https://www.acmicpc.net/problem/14003)

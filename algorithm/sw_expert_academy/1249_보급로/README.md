@@ -4,7 +4,7 @@ title: 보급로
 site: SWEA
 number: 1249
 date_started: 2024.05.10
-tags: BFS, Python
+tags: BFS, python
 level: D4
 ---
 

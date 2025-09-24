@@ -4,7 +4,7 @@ title: 암호코드 스캔
 site: SWEA
 number: 1242
 date_started: 2024.05.17
-tags: 구현, 해시, Python
+tags: 구현, 해시, python
 level: D5
 ---
 

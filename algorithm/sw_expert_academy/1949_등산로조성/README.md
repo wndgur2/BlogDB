@@ -4,7 +4,7 @@ title: 등산로 조성
 site: SWEA
 number: 1949
 date_started: 2024.06.16
-tags: "DFS, Python"
+tags: "DFS, python"
 level: 모의 역량
 ---
 

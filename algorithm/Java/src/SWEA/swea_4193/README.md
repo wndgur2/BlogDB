@@ -4,7 +4,7 @@ title: 수영대회 결승전
 site: SWEA
 number: 4193
 date_started: 2024.07.14
-tags: JAVA, 완전탐색
+tags: java, 완전탐색
 level: D4
 ---
 

@@ -4,7 +4,7 @@ title: 공통 조상
 site: SWEA
 number: 1248
 date_started: 2024.05.16
-tags: 트리, Python
+tags: 트리, python
 level: D5
 ---
 
