@@ -32,6 +32,7 @@
   "posts/algorithm/View.md",
   "posts/algorithm/최대_상금.md",
   "posts/algorithm/수_나누기_게임.md",
+  "posts/algorithm/카운트_디운.md",
   "posts/algorithm/두개의_숫자열.md",
   "posts/algorithm/탑.md",
   "posts/algorithm/등산로_조성.md",
@@ -40,6 +41,7 @@
   "posts/algorithm/가장_긴_증가하는_부분_수열_5.md",
   "posts/algorithm/전기버스.md",
   "posts/algorithm/상자_정렬하기.md",
+  "posts/algorithm/README.md",
   "posts/algorithm/Flatten.md",
   "posts/algorithm/암호코드_스캔.md",
   "posts/algorithm/동전_0.md",
@@ -47,7 +49,6 @@
   "posts/algorithm/마법사_상어와_블리자드.md",
   "posts/algorithm/숫자배열회전.md",
   "posts/algorithm/숫자카드.md",
-  "posts/algorithm/카운트_다운.md",
   "posts/algorithm/공통_조상.md",
   ""
 ]
