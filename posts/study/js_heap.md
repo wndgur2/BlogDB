@@ -3,7 +3,8 @@ category: Study
 title: JS로 힙(heap) 구현하기
 date_started: 2025.12.02
 date_updated: 2025.12.02
-tags: heap, data-structure, javascript, isPriority-queue
+tags: heap, data-structure, javascript, priority-queue
+github: "https://github.com/wndgur2/BlogDB/blob/main/posts/study/js_heap.md"
 ---
 
 ![heap](https://github.com/user-attachments/assets/d1f75775-8196-40ef-9c65-5998e1ee4b56)
