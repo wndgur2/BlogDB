@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Heap {
+      constructor(prior) {
+        this.nodes = []
+        this.prior = prior // prior(a, b) === true if a should be above b
+      }
+
+      top () {
+        return this.nodes[0]
+      }
+
+      insert (node) {
+        this.nodes.push(node)
+        let i = this.nodes.length - 1
+
+        // sift up
+        while (i > 0) {
+          const pi = i - 1 >> 1 // Math.floor(i / 2)
+          if (this.prior(this.nodes[i], this.nodes[pi])) {
+            ;[this.nodes[i], this.nodes[pi]] = [this.nodes[pi], this.nodes[i]]
+            i = pi
+          } else {
+            break
+          }
+        }
+      }
+
+      pop () {
+        if (this.nodes.length === 0) return
+
+        const res = this.nodes[0]
+        if (this.nodes.length === 1) {
+          this.nodes.pop()
+          return res
+        }
+
+        this.nodes[0] = this.nodes.pop()
+
+        const size = this.nodes.length
+        let i = 0
+
+        // sift down
+        while (true) {
+          const l = i * 2 + 1
+          const r = l + 1
+          let best = i
+
+          if (l < size && this.prior(this.nodes[l], this.nodes[best])) {
+            best = l
+          }
+          if (r < size && this.prior(this.nodes[r], this.nodes[best])) {
+            best = r
+          }
+
+          if (best === i) break
+
+            ;[this.nodes[i], this.nodes[best]] = [this.nodes[best], this.nodes[i]]
+          i = best
+        }
+
+        return res
+      }
+    }
+
+
+    const pq = new Heap((a, b) => a < b)
+
+    pq.insert(1)
+    pq.insert(2)
+    pq.insert(10)
+    pq.insert(5)
+    pq.insert(4)
+
+    console.log(pq.nodes)
+    console.log(pq.pop())
+    console.log(pq.nodes)
+    console.log(pq.pop())
+    console.log(pq.nodes)
+    console.log(pq.pop())
+    console.log(pq.nodes)
+    console.log(pq.pop())
+    console.log(pq.nodes)
+    console.log(pq.pop())
+
+  </script>
+</body>
+
+</html>

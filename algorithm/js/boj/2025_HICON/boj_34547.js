@@ -1,6 +1,6 @@
 let fs = require('fs');
-// let lines = fs.readFileSync('inputs').toString().trim().split('\n');
-let lines = fs.readFileSync(0, "utf-8").toString().trim().split('\n');
+let lines = fs.readFileSync('inputs').toString().trim().split('\n');
+// let lines = fs.readFileSync(0, "utf-8").toString().trim().split('\n');
 
 let N = Number(lines.shift())
 let [A, B, K] = lines[0].trim().split(' ').map(Number)
@@ -44,7 +44,7 @@ for(let day=1; day<N+1; day++){
 
 let res = 0
 // console.log(dp[N].size)
-// console.log('p', p)
+console.log('p', p)
 for([k, v] of dp[N])
   res=v>res?v:res
 console.log(res)
