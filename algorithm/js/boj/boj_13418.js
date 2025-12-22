@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let [n, e] = inputs[0].split(' ').map(v=>Number(v))
 let edges = inputs.slice(1,).map(v=>v.split(' ').map(v=>Number(v)))
 edges.forEach((v,i)=>edges[i][2] = 1-edges[i][2])

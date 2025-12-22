@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 const [height, width] = inputs[0].split(' ')
 const board = inputs.filter((_,i)=>i!=0).map(row=>Array.from(row))

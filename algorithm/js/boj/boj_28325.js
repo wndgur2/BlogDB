@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().split('\n')
+let inputs = fs.readFileSync('/dev/stdin').toString().split('\n')
 let N = Number(inputs[0])
 let rooms = inputs[1].split(' ').map(v=>BigInt(v))
 

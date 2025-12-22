@@ -1,7 +1,7 @@
 // 메모리초과
 
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 let N = parseInt(inputs[0])
 let PS = inputs.slice(1,).map((v)=>v.split(' ').map(r=>parseInt(r)))

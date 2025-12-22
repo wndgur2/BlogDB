@@ -1,7 +1,7 @@
 // 틀렸습니다.
 
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 let N = parseInt(inputs[0])
 let HONEYS = inputs[1].split(' ').map(v=>parseInt(v))

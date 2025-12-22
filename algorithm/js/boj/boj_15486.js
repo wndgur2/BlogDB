@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 let N = Number(inputs[0])
 let times = []

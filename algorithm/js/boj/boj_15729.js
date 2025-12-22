@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let N = parseInt(inputs[0])
 let target_lights = inputs[1].split(' ').map(v=>parseInt(v)?true:false)
 let lights = Array(N).fill(false)

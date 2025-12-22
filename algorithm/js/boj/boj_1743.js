@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 let [H, W, _] = inputs[0].split(' ').map((ch)=>Number(ch))
 let floorMap = [...Array(H)].map((ar)=>Array(W).fill(0))

@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split('\n');
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let numbers = inputs[1].split(' ').map(_=>Number(_))
 numbers = numbers.sort((a, b)=> a-b)
 

@@ -1,5 +1,5 @@
 let fs = require('fs')
-let inputs = fs.readFileSync('dev/stdin').toString().trim().split(' ').map(_=>Number(_));
+let inputs = fs.readFileSync('/dev/stdin').toString().trim().split(' ').map(_=>Number(_));
 
 // 3턴 동안의 경우의 수 고려해서 최솟값 유지하기 8*100000 = 80만
 
