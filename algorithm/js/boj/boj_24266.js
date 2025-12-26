@@ -1,0 +1,6 @@
+const fs = require('fs')
+const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ').map(Number)
+// const input = fs.readFileSync('inputs').toString().trim().split(' ').map(Number)
+const n = BigInt(input[0])
+console.log((n * n * n).toString())
+console.log(3)

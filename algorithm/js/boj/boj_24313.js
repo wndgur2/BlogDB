@@ -1,0 +1,10 @@
+const fs = require('fs')
+const inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n')
+// const inputs = fs.readFileSync('inputs').toString().trim().split('\n')
+const [a1, a2] = inputs[0].split(' ').map(Number)
+const c = Number(inputs[1])
+const n0 = Number(inputs[2])
+
+if (a1 > c) console.log(0)
+else if (a1 * n0 + a2 <= c * n0) console.log(1)
+else console.log(0)
