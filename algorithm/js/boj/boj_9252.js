@@ -2,18 +2,13 @@ const fs = require('fs')
 const [A, B] = fs.readFileSync('/dev/stdin').toString().trim().split('\n')
 
 const dp = new Array(A.length + 1).fill(0).map((v) => new Array(B.length + 1).fill(0))
-const preNodes = new Array(A.length + 1)
-  .fill(0)
-  .map((v) => new Array(B.length + 1).fill(0).map((v) => [0, 0]))
 
 for (let i = 1; i < A.length + 1; i++) {
   for (let j = 1; j < B.length + 1; j++) {
     if (A[i - 1] === B[j - 1]) {
       dp[i][j] = dp[i - 1][j - 1] + 1
-      preNodes[i][j] = [i - 1, j - 1]
     } else {
       dp[i][j] = dp[i - 1][j] > dp[i][j - 1] ? dp[i - 1][j] : dp[i][j - 1]
-      preNodes[i][j] = dp[i - 1][j] > dp[i][j - 1] ? [i - 1, j] : [i, j - 1]
     }
   }
 }
