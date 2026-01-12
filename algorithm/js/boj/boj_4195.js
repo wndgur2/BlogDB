@@ -2,31 +2,16 @@ const fs = require('fs')
 
 const inputs = fs.readFileSync('/dev/stdin').toString().trim().split('\n')
 
-class Node {
-  constructor(name) {
-    this.name = name
-    this.parent = this
-    this.cn = 1
-  }
-
-  cp(p) {
-    const dc = this.cn
-    // if (p.name == '1') {
-    //   console.log('changing 1 cn', p.cn, 'to', p.cn + dc)
-    //   console.log(dc)
-    // }
-    this.parent.cn -= dc
-    this.parent = p
-    p.cn += dc
-  }
-}
+const nodes = new Map()
+let parents = []
+let cns = []
 
 function find(a) {
-  if (a.parent === a) {
+  if (parents[a] === a) {
     return a
   } else {
-    a.cp(find(a.parent))
-    return a.parent
+    parents[a] = find(parents[a])
+    return parents[a]
   }
 }
 
@@ -34,7 +19,8 @@ function union(a, b) {
   const ra = find(a)
   const rb = find(b)
   if (ra !== rb) {
-    rb.cp(ra)
+    parents[rb] = ra
+    cns[ra] += cns[rb]
     find(b)
   }
 }
@@ -43,19 +29,29 @@ const T = Number(inputs[0])
 let line = 1
 for (let tc = 0; tc < T; tc++) {
   const n = Number(inputs[line++])
-  const nodes = new Map()
+  let id = 0
+  nodes.clear()
+  parents = []
+  cns = []
+  res = []
+
   for (let i = 0; i < n; i++) {
     const rel = inputs[line++].split(' ')
     // console.log(rel)
-    if (!nodes.has(rel[0])) nodes.set(rel[0], new Node(rel[0]))
-    if (!nodes.has(rel[1])) nodes.set(rel[1], new Node(rel[1]))
+    if (!nodes.has(rel[0])) {
+      nodes.set(rel[0], id++)
+      parents.push(nodes.get(rel[0]))
+      cns.push(1)
+    }
+    if (!nodes.has(rel[1])) {
+      nodes.set(rel[1], id++)
+      parents.push(nodes.get(rel[1]))
+      cns.push(1)
+    }
     const a = nodes.get(rel[0])
     const b = nodes.get(rel[1])
     union(a, b)
-    console.log(a.parent.cn)
-    // Array.from(nodes.keys()).map((k) => {
-    //   const node = nodes.get(k)
-    //   console.log(node.name, node.parent.name, node.cn)
-    // })
+    res.push(cns[parents[a]])
   }
+  console.log(res.join('\n'))
 }
