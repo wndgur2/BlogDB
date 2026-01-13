@@ -4,7 +4,7 @@ title: JS로 덱(Double-ended queue) 구현하기
 date_started: 2026.01.13
 date_updated: 2026.01.13
 tags: deque, data-structure, javascript, queue
-github: 'https://github.com/wndgur2/BlogDB/blob/main/posts/study/js_dequeue.md'
+github: 'https://github.com/wndgur2/BlogDB/blob/main/posts/study/js_deque.md'
 ---
 
 # Double-ended queue
