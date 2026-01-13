@@ -4,7 +4,7 @@ title: JS로 힙(heap) 구현하기
 date_started: 2025.12.02
 date_updated: 2025.12.02
 tags: heap, data-structure, javascript, priority-queue
-github: "https://github.com/wndgur2/BlogDB/blob/main/posts/study/js_heap.md"
+github: 'https://github.com/wndgur2/BlogDB/blob/main/posts/study/js_heap.md'
 ---
 
 ![heap](https://github.com/user-attachments/assets/d1f75775-8196-40ef-9c65-5998e1ee4b56)
@@ -21,11 +21,11 @@ js로 알고리즘을 풀다 보니, 구현해야하는 자료구조들이 있�
 
 아마 다음엔 Linked List를 통한 dequeue를 구현해볼 것 같다.
 
-
 > ### 목차
-> 1. 힙이란?  
-> 2. 힙 들여다보기  
-> 3. javascript로 힙 구현하기  
+>
+> 1. 힙이란?
+> 2. 힙 들여다보기
+> 3. javascript로 힙 구현하기
 
 ## 1. 힙이란?
 
@@ -53,17 +53,17 @@ js로 알고리즘을 풀다 보니, 구현해야하는 자료구조들이 있�
 트리의 `depth` 만큼 수행되므로 시간복잡도는 `O(logN)`가 된다.
 
 ### 2-2 삭제 pop()
-  
+
 > heap에서의 삭제는, 보통 `root`를 삭제하는 `pop()`을 의미한다.  
 > `root`를 제외한 노드는 자료구조의 용도, 성능을 이유로 삭제를 구현하지는 않는 것 같다.
 
 <img alt="heap_pop" src="https://github.com/user-attachments/assets/8bf4dd28-442e-4764-9fb5-7dcb6609bdb2" />
 
-우선 `root` 자리를 마지막 노드로 대체한다. (삭제 후에도 완전 이진 트리를 유지하기 위한 좋은 방법 같다.) 
+우선 `root` 자리를 마지막 노드로 대체한다. (삭제 후에도 완전 이진 트리를 유지하기 위한 좋은 방법 같다.)
 
 이제 `root` 노드를 적당한 자리로 보내기 위해 아래 과정을 거친다. (sift down 과정이라 부른다.)
 
-대체할 우선순위가 높은 자식 노드를 찾는다. `min-heap`에서는 더 작은 자식 노드가 `root`와 자리를 바꾸게 된다. 
+대체할 우선순위가 높은 자식 노드를 찾는다. `min-heap`에서는 더 작은 자식 노드가 `root`와 자리를 바꾸게 된다.
 
 내려간 자리에서 같은 과정을 반복한다. 즉, 리프노드가 되거나 자식들보다 본인의 우선순위가 높을 때까지 우선순위가 높은 자식노드와 자리를 바꾼다.
 
@@ -82,75 +82,71 @@ js로 알고리즘을 풀다 보니, 구현해야하는 자료구조들이 있�
 함수 `isPrior(a, b)`를 생성자의 인자로 두어 상황에 필요한 비교 연산을 넣을 수 있도록 했다.
 
 ```javascript
+class Heap {
+  constructor(isPrior) {
+    this.nodes = []
+    this.isPrior = isPrior
+  }
 
+  top() {
+    return this.nodes[0]
+  }
 
-    class Heap {
-      constructor(isPrior) {
-        this.nodes = []
-        this.isPrior = isPrior 
-      }
+  insert(node) {
+    this.nodes.push(node)
+    let i = this.nodes.length - 1
 
-      top () {
-        return this.nodes[0]
-      }
-
-      insert (node) {
-        this.nodes.push(node)
-        let i = this.nodes.length - 1
-
-        // sift up
-        while (i > 0) {
-          const pi = i - 1 >> 1
-          if (this.isPrior(this.nodes[i], this.nodes[pi])) {
-            ;[this.nodes[i], this.nodes[pi]] = [this.nodes[pi], this.nodes[i]]
-            i = pi
-          } else {
-            break
-          }
-        }
-      }
-
-      pop () {
-        if (this.nodes.length === 0) return
-
-        const res = this.nodes[0]
-        if (this.nodes.length === 1) {
-          this.nodes.pop()
-          return res
-        }
-
-        this.nodes[0] = this.nodes.pop()
-
-        const size = this.nodes.length
-        let i = 0
-
-        // sift down
-        while (true) {
-          const l = i * 2 + 1
-          const r = l + 1
-          let best = i
-
-          if (l < size && this.isPrior(this.nodes[l], this.nodes[best])) {
-            best = l
-          }
-          if (r < size && this.isPrior(this.nodes[r], this.nodes[best])) {
-            best = r
-          }
-
-          if (best === i) break
-
-            ;[this.nodes[i], this.nodes[best]] = [this.nodes[best], this.nodes[i]]
-          i = best
-        }
-
-        return res
+    // sift up
+    while (i > 0) {
+      const pi = (i - 1) >> 1
+      if (this.isPrior(this.nodes[i], this.nodes[pi])) {
+        ;[this.nodes[i], this.nodes[pi]] = [this.nodes[pi], this.nodes[i]]
+        i = pi
+      } else {
+        break
       }
     }
+  }
 
+  pop() {
+    if (this.nodes.length === 0) return
+
+    const res = this.nodes[0]
+    if (this.nodes.length === 1) {
+      this.nodes.pop()
+      return res
+    }
+
+    this.nodes[0] = this.nodes.pop()
+
+    const size = this.nodes.length
+    let i = 0
+
+    // sift down
+    while (true) {
+      const l = i * 2 + 1
+      const r = l + 1
+      let best = i
+
+      if (l < size && this.isPrior(this.nodes[l], this.nodes[best])) {
+        best = l
+      }
+      if (r < size && this.isPrior(this.nodes[r], this.nodes[best])) {
+        best = r
+      }
+
+      if (best === i) break
+      ;[this.nodes[i], this.nodes[best]] = [this.nodes[best], this.nodes[i]]
+      i = best
+    }
+
+    return res
+  }
+}
 ```
 
 생성 예
 
 ```javascript
-const pq = new Heap((a, b)=> a < b) // min-heap
+const pq = new Heap((a, b) => a < b) // min-heap
 ```

@@ -1,11 +1,11 @@
-class Dequeue {
+class Deque {
   head = null
   tail = null
   sum = 0
-  length = 0
+  size = 0
 
   pop() {
-    if (this.size() === 0) return null
+    if (this.size === 0) return null
 
     const res = this.head
 
@@ -17,13 +17,13 @@ class Dequeue {
     }
 
     this.sum -= res.value
-    this.length--
+    this.size--
 
     return res
   }
 
   push(node) {
-    if (this.size() === 0) {
+    if (this.size === 0) {
       this.head = node
       this.tail = node
     } else {
@@ -32,16 +32,7 @@ class Dequeue {
       this.tail = node
     }
     this.sum += node.value
-    this.length++
-  }
-  size() {
-    let size = 0
-    let node = this.head
-    while (node) {
-      size++
-      node = node.next
-    }
-    return size
+    this.size++
   }
 }
 
@@ -61,8 +52,8 @@ const [queue1, queue2] = [
 ]
 const N = queue1.length
 var answer = -1
-const deq1 = new Dequeue()
-const deq2 = new Dequeue()
+const deq1 = new Deque()
+const deq2 = new Deque()
 
 for (let i = 0; i < N; i++) {
   deq1.push(new Node(queue1[i]))
