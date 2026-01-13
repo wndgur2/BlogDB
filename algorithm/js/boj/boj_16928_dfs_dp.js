@@ -16,7 +16,7 @@ for (let i = 0; i < lines.length; i++) {
 const q = [[0, 0]]
 
 while (q.length > 0) {
-  const [kan, turn] = q.shift()
+  const [kan, turn] = q.pop()
   if (turn < dp[kan]) dp[kan] = turn
   else continue
   for (let dice = 6; dice >= 1; dice--) {
